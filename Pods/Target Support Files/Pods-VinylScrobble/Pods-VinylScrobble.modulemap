@@ -1,0 +1,6 @@
+framework module Pods_VinylScrobble {
+  umbrella header "Pods-VinylScrobble-umbrella.h"
+
+  export *
+  module * { export * }
+}
