@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "11E960C65532C6259729EB39F448C85D"
+               BlueprintIdentifier = "D47A34ECA61E8958CED30E5EEBD553D4"
                BuildableName = "Pods_VinylScrobble.framework"
                BlueprintName = "Pods-VinylScrobble"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "11E960C65532C6259729EB39F448C85D"
+            BlueprintIdentifier = "D47A34ECA61E8958CED30E5EEBD553D4"
             BuildableName = "Pods_VinylScrobble.framework"
             BlueprintName = "Pods-VinylScrobble"
             ReferencedContainer = "container:Pods.xcodeproj">

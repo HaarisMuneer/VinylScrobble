@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-VinylScrobble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -16,17 +21,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>11E960C65532C6259729EB39F448C85D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>63BDFCA78442903633D28854E3DCE48B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

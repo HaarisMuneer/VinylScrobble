@@ -13,6 +13,9 @@
 		2B4F6AF81E009B8F00C8233F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4F6AF61E009B8F00C8233F /* Main.storyboard */; };
 		2B4F6AFA1E009B8F00C8233F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4F6AF91E009B8F00C8233F /* Assets.xcassets */; };
 		2B4F6AFD1E009B8F00C8233F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4F6AFB1E009B8F00C8233F /* LaunchScreen.storyboard */; };
+		2BC8534A1F05D47B00BF68E4 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC853491F05D47B00BF68E4 /* Secrets.swift */; };
+		2BC8534C1F05D8FC00BF68E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8534B1F05D8FC00BF68E4 /* Constants.swift */; };
+		2BC8534E1F05E28500BF68E4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8534D1F05E28500BF68E4 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2B4F6AF91E009B8F00C8233F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B4F6AFC1E009B8F00C8233F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B4F6AFE1E009B8F00C8233F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC853491F05D47B00BF68E4 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		2BC8534B1F05D8FC00BF68E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2BC8534D1F05E28500BF68E4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		661E0C455B02D900EDDB6D36 /* Pods_VinylScrobble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinylScrobble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4940A7DC788B1542CD738F1 /* Pods-VinylScrobble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylScrobble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VinylScrobble/Pods-VinylScrobble.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				2B4F6AF21E009B8F00C8233F /* AppDelegate.swift */,
+				2BC853491F05D47B00BF68E4 /* Secrets.swift */,
+				2BC8534B1F05D8FC00BF68E4 /* Constants.swift */,
 				2B4F6AF41E009B8F00C8233F /* ViewController.swift */,
+				2BC8534D1F05E28500BF68E4 /* APIClient.swift */,
 				2B4F6AF61E009B8F00C8233F /* Main.storyboard */,
 				2B4F6AF91E009B8F00C8233F /* Assets.xcassets */,
 				2B4F6AFB1E009B8F00C8233F /* LaunchScreen.storyboard */,
@@ -187,7 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F82A9AAB6EC9CCB083A8A122 /* [CP] Embed Pods Frameworks */ = {
@@ -213,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B4F6AF51E009B8F00C8233F /* ViewController.swift in Sources */,
+				2BC8534A1F05D47B00BF68E4 /* Secrets.swift in Sources */,
 				2B4F6AF31E009B8F00C8233F /* AppDelegate.swift in Sources */,
+				2BC8534E1F05E28500BF68E4 /* APIClient.swift in Sources */,
+				2BC8534C1F05D8FC00BF68E4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +391,7 @@
 				2B4F6B031E009B8F00C8233F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
