@@ -9,20 +9,25 @@
 /* Begin PBXBuildFile section */
 		1C991B504E6FFE7EFE7E47F1 /* Pods_VinylScrobble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661E0C455B02D900EDDB6D36 /* Pods_VinylScrobble.framework */; };
 		2B4F6AF31E009B8F00C8233F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4F6AF21E009B8F00C8233F /* AppDelegate.swift */; };
-		2B4F6AF51E009B8F00C8233F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4F6AF41E009B8F00C8233F /* ViewController.swift */; };
 		2B4F6AF81E009B8F00C8233F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4F6AF61E009B8F00C8233F /* Main.storyboard */; };
 		2B4F6AFA1E009B8F00C8233F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4F6AF91E009B8F00C8233F /* Assets.xcassets */; };
 		2B4F6AFD1E009B8F00C8233F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4F6AFB1E009B8F00C8233F /* LaunchScreen.storyboard */; };
 		2BC8534A1F05D47B00BF68E4 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC853491F05D47B00BF68E4 /* Secrets.swift */; };
 		2BC8534C1F05D8FC00BF68E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8534B1F05D8FC00BF68E4 /* Constants.swift */; };
 		2BC8534E1F05E28500BF68E4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8534D1F05E28500BF68E4 /* APIClient.swift */; };
+		2BEB4E541F104123008440D6 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB4E531F104122008440D6 /* Types.swift */; };
+		2BEB4E561F1170DC008440D6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB4E551F1170DC008440D6 /* DataStore.swift */; };
+		2BEB4E581F11740B008440D6 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB4E571F11740B008440D6 /* CollectionViewController.swift */; };
+		2BEB4E5A1F117414008440D6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB4E591F117414008440D6 /* SearchViewController.swift */; };
+		2BEB4E5C1F117419008440D6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB4E5B1F117419008440D6 /* SettingsViewController.swift */; };
+		2BEB4E5E1F11741E008440D6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB4E5D1F11741E008440D6 /* SignInViewController.swift */; };
+		2BEB4E601F117437008440D6 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB4E5F1F117437008440D6 /* AlbumDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FFE20BACC99A9988B5D3FEA /* Pods-VinylScrobble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylScrobble.release.xcconfig"; path = "Pods/Target Support Files/Pods-VinylScrobble/Pods-VinylScrobble.release.xcconfig"; sourceTree = "<group>"; };
 		2B4F6AEF1E009B8F00C8233F /* VinylScrobble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinylScrobble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4F6AF21E009B8F00C8233F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B4F6AF41E009B8F00C8233F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B4F6AF71E009B8F00C8233F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B4F6AF91E009B8F00C8233F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B4F6AFC1E009B8F00C8233F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +35,13 @@
 		2BC853491F05D47B00BF68E4 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		2BC8534B1F05D8FC00BF68E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2BC8534D1F05E28500BF68E4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		2BEB4E531F104122008440D6 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		2BEB4E551F1170DC008440D6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		2BEB4E571F11740B008440D6 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2BEB4E591F117414008440D6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2BEB4E5B1F117419008440D6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2BEB4E5D1F11741E008440D6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		2BEB4E5F1F117437008440D6 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		661E0C455B02D900EDDB6D36 /* Pods_VinylScrobble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinylScrobble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4940A7DC788B1542CD738F1 /* Pods-VinylScrobble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylScrobble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VinylScrobble/Pods-VinylScrobble.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,12 +82,18 @@
 				2B4F6AF21E009B8F00C8233F /* AppDelegate.swift */,
 				2BC853491F05D47B00BF68E4 /* Secrets.swift */,
 				2BC8534B1F05D8FC00BF68E4 /* Constants.swift */,
-				2B4F6AF41E009B8F00C8233F /* ViewController.swift */,
 				2BC8534D1F05E28500BF68E4 /* APIClient.swift */,
+				2BEB4E531F104122008440D6 /* Types.swift */,
+				2BEB4E551F1170DC008440D6 /* DataStore.swift */,
 				2B4F6AF61E009B8F00C8233F /* Main.storyboard */,
 				2B4F6AF91E009B8F00C8233F /* Assets.xcassets */,
 				2B4F6AFB1E009B8F00C8233F /* LaunchScreen.storyboard */,
 				2B4F6AFE1E009B8F00C8233F /* Info.plist */,
+				2BEB4E571F11740B008440D6 /* CollectionViewController.swift */,
+				2BEB4E591F117414008440D6 /* SearchViewController.swift */,
+				2BEB4E5B1F117419008440D6 /* SettingsViewController.swift */,
+				2BEB4E5D1F11741E008440D6 /* SignInViewController.swift */,
+				2BEB4E5F1F117437008440D6 /* AlbumDetailViewController.swift */,
 			);
 			path = VinylScrobble;
 			sourceTree = "<group>";
@@ -221,11 +239,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4F6AF51E009B8F00C8233F /* ViewController.swift in Sources */,
+				2BEB4E561F1170DC008440D6 /* DataStore.swift in Sources */,
 				2BC8534A1F05D47B00BF68E4 /* Secrets.swift in Sources */,
+				2BEB4E5A1F117414008440D6 /* SearchViewController.swift in Sources */,
+				2BEB4E601F117437008440D6 /* AlbumDetailViewController.swift in Sources */,
 				2B4F6AF31E009B8F00C8233F /* AppDelegate.swift in Sources */,
+				2BEB4E541F104123008440D6 /* Types.swift in Sources */,
+				2BEB4E581F11740B008440D6 /* CollectionViewController.swift in Sources */,
 				2BC8534E1F05E28500BF68E4 /* APIClient.swift in Sources */,
 				2BC8534C1F05D8FC00BF68E4 /* Constants.swift in Sources */,
+				2BEB4E5E1F11741E008440D6 /* SignInViewController.swift in Sources */,
+				2BEB4E5C1F117419008440D6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

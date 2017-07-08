@@ -9,5 +9,9 @@ target 'VinylScrobble' do
 
   pod 'SnapKit', '~> 3.0.2'
   pod 'Alamofire'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+  pod 'SCLAlertView'
+  pod 'SwiftyJSON'
+  
 
 end

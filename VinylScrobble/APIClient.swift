@@ -7,31 +7,22 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class APIClient {
     
-    class func getDiscogsSearchResults(query: String, completion: @escaping ([String : Any]) -> ()) {
+    class func getDiscogsSearchResults(query: String, completion: @escaping (JSON) -> ()) {
         var urlString = "\(discogsBaseURL)/database/search?q=\(query)&type=release&key=\(discogsConsumerKey)&secret=\(discogsConsumerSecret)"
         urlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         let url = URL(string: urlString)
-        let params = ["q" : query, "type" : "release", "key" : discogsConsumerKey, "secret" : discogsConsumerSecret]
         let request = URLRequest(url: url!)
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error) in
-            if error == nil {
-                do {
-                    if let responseDict = try JSONSerialization.jsonObject(with: data!, options: []) as? [String : Any] {
-                        print(responseDict)
-                        completion(responseDict)
-                    }
-                    
-                }
-                catch let error as NSError {
-                    print(error.localizedDescription)
-                }
+            if let error = error {
+                print("There was an error: \(error.localizedDescription)")
             }
-            else {
-                print(error?.localizedDescription)
+            if let data = data {
+                completion(JSON(data))
             }
         }.resume()
     }
