@@ -8,7 +8,16 @@
 
 import UIKit
 
-let discogsRequestTokenURL = "https://api.discogs.com/oauth/request_token"
-let discogsAuthorizeURL = "https://www.discogs.com/oauth/authorize"
-let discogsAccessTokenURL = "https://api.discogs.com/oauth/access_token"
-let discogsBaseURL = "https://api.discogs.com"
+struct Constants {
+    static let discogsRequestTokenURL = "https://api.discogs.com/oauth/request_token"
+    static let discogsAuthorizeURL = "https://www.discogs.com/oauth/authorize"
+    static let discogsAccessTokenURL = "https://api.discogs.com/oauth/access_token"
+    static let discogsBaseURL = "https://api.discogs.com"
+    
+    static let albumTableViewCellIdentifier = "albumTableViewCell"
+    
+    static let statusBarHeight = UIApplication.shared.statusBarFrame.height
+    
+}
+
+

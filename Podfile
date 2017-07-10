@@ -12,6 +12,7 @@ target 'VinylScrobble' do
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
   pod 'SCLAlertView'
   pod 'SwiftyJSON'
+  pod 'SDWebImage'
   
 
 end

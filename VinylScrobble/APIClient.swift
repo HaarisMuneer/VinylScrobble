@@ -12,7 +12,7 @@ import SwiftyJSON
 class APIClient {
     
     class func getDiscogsSearchResults(query: String, completion: @escaping (JSON) -> ()) {
-        var urlString = "\(discogsBaseURL)/database/search?q=\(query)&type=release&key=\(discogsConsumerKey)&secret=\(discogsConsumerSecret)"
+        var urlString = "\(Constants.discogsBaseURL)/database/search?q=\(query)&type=release&key=\(Secrets.discogsConsumerKey)&secret=\(Secrets.discogsConsumerSecret)"
         urlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         let url = URL(string: urlString)
         let request = URLRequest(url: url!)

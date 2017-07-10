@@ -4,6 +4,9 @@ PODS:
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - SCLAlertView (0.7.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SnapKit (3.0.2)
   - SwiftyJSON (3.1.4)
 
@@ -11,6 +14,7 @@ DEPENDENCIES:
   - Alamofire
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - SCLAlertView
+  - SDWebImage
   - SnapKit (~> 3.0.2)
   - SwiftyJSON
 
@@ -27,9 +31,10 @@ SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: bdcf15582f3d83b8fa0ac3665b2d6db495b12f1d
+PODFILE CHECKSUM: 0d727e5dd7a1c32c40e8f7c873e71aa59204b094
 
 COCOAPODS: 1.2.1

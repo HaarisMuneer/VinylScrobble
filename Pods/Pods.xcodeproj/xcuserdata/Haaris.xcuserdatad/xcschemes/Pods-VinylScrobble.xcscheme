@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A9FC151B4F80A1E462E40F87E663463"
+               BlueprintIdentifier = "F6D40FD5E77831A560BC4F5BBA07E022"
                BuildableName = "Pods_VinylScrobble.framework"
                BlueprintName = "Pods-VinylScrobble"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A9FC151B4F80A1E462E40F87E663463"
+            BlueprintIdentifier = "F6D40FD5E77831A560BC4F5BBA07E022"
             BuildableName = "Pods_VinylScrobble.framework"
             BlueprintName = "Pods-VinylScrobble"
             ReferencedContainer = "container:Pods.xcodeproj">
