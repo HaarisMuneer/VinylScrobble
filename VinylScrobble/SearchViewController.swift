@@ -22,7 +22,7 @@ class SearchViewController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(AlbumTableViewCell.self, forCellReuseIdentifier: Constants.albumTableViewCellIdentifier)
+        self.tableView.register(AlbumTableViewCell.self, forCellReuseIdentifier: Constants.albumTableViewIdentifier)
         view.addSubview(self.tableView)
         
         self.searchField.delegate = self
@@ -50,7 +50,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.albumTableViewCellIdentifier, for: indexPath) as! AlbumTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.albumTableViewIdentifier, for: indexPath) as! AlbumTableViewCell
         cell.album = albums[indexPath.row]
         return cell
     }

@@ -13,6 +13,7 @@
 		2B4F6AFA1E009B8F00C8233F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4F6AF91E009B8F00C8233F /* Assets.xcassets */; };
 		2B4F6AFD1E009B8F00C8233F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4F6AFB1E009B8F00C8233F /* LaunchScreen.storyboard */; };
 		2B6458EF1F142B66006FB576 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6458EE1F142B66006FB576 /* Extensions.swift */; };
+		2B6458F11F1480E9006FB576 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6458F01F1480E9006FB576 /* AlbumCollectionViewCell.swift */; };
 		2BC8534A1F05D47B00BF68E4 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC853491F05D47B00BF68E4 /* Secrets.swift */; };
 		2BC8534C1F05D8FC00BF68E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8534B1F05D8FC00BF68E4 /* Constants.swift */; };
 		2BC8534E1F05E28500BF68E4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8534D1F05E28500BF68E4 /* APIClient.swift */; };
@@ -35,6 +36,7 @@
 		2B4F6AFC1E009B8F00C8233F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B4F6AFE1E009B8F00C8233F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6458EE1F142B66006FB576 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2B6458F01F1480E9006FB576 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		2BC853491F05D47B00BF68E4 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		2BC8534B1F05D8FC00BF68E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2BC8534D1F05E28500BF68E4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				2B4F6AFB1E009B8F00C8233F /* LaunchScreen.storyboard */,
 				2B4F6AFE1E009B8F00C8233F /* Info.plist */,
 				2BEB4E571F11740B008440D6 /* CollectionViewController.swift */,
+				2B6458F01F1480E9006FB576 /* AlbumCollectionViewCell.swift */,
 				2BEB4E591F117414008440D6 /* SearchViewController.swift */,
 				2BEB4E5B1F117419008440D6 /* SettingsViewController.swift */,
 				2BEB4E5D1F11741E008440D6 /* SignInViewController.swift */,
@@ -251,6 +254,7 @@
 				2BEB4E601F117437008440D6 /* AlbumDetailViewController.swift in Sources */,
 				2B4F6AF31E009B8F00C8233F /* AppDelegate.swift in Sources */,
 				2BEB4E541F104123008440D6 /* Types.swift in Sources */,
+				2B6458F11F1480E9006FB576 /* AlbumCollectionViewCell.swift in Sources */,
 				2BEB4E581F11740B008440D6 /* CollectionViewController.swift in Sources */,
 				2BC8534E1F05E28500BF68E4 /* APIClient.swift in Sources */,
 				2B6458EF1F142B66006FB576 /* Extensions.swift in Sources */,

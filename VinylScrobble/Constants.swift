@@ -14,7 +14,9 @@ struct Constants {
     static let discogsAccessTokenURL = "https://api.discogs.com/oauth/access_token"
     static let discogsBaseURL = "https://api.discogs.com"
     
-    static let albumTableViewCellIdentifier = "albumTableViewCell"
+    static let albumTableViewIdentifier = "albumTableViewCell"
+    
+    static let albumCollectionViewIdentifier = "albumCollectionViewCell"
     
     static let statusBarHeight = UIApplication.shared.statusBarFrame.height
     

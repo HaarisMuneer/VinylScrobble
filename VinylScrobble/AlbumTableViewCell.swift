@@ -27,7 +27,15 @@ class AlbumTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        self.commonInit()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.commonInit()
+    }
+    
+    func commonInit() {
         labelsStackView = UIStackView(arrangedSubviews: [titleLabel, artistLabel, labelAndYearLabel])
         labelsStackView.axis = .vertical
         labelsStackView.distribution = .fillProportionally
@@ -36,10 +44,6 @@ class AlbumTableViewCell: UITableViewCell {
         self.addSubview(labelsStackView)
         
         setConstraints()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
     }
     
     fileprivate func setConstraints() {

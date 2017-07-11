@@ -34,6 +34,14 @@ struct Album {
         self.thumbnailURL = URL(string: thumbnailURL)
         
     }
+    
+    init() {
+        self.title = "Rock Creek Park"
+        self.artist = "Oddisee"
+        self.year = "2011"
+        self.label = "Mello Music Group"
+        self.thumbnailURL = URL(string: "https://i1.sndcdn.com/artworks-000023004645-sczg6t-t500x500.jpg")
+    }
 }
 
 struct Side {
@@ -46,4 +54,12 @@ struct Track {
     
     var title: String
     
+}
+
+struct User {
+    var collection: [Album]
+    
+    init() {
+        self.collection = []
+    }
 }
