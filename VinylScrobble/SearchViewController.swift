@@ -18,6 +18,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let navBarHeight = self.navigationController?.navigationBar.frame.height
         
         self.tableView.delegate = self
@@ -26,6 +27,9 @@ class SearchViewController: UIViewController {
         view.addSubview(self.tableView)
         
         self.searchField.delegate = self
+        
+        
+        
         view.addSubview(searchField)
         
         self.searchField.snp.makeConstraints { (make) in
@@ -35,9 +39,11 @@ class SearchViewController: UIViewController {
         }
         
         self.tableView.snp.makeConstraints { (make) in
-            make.top.equalTo(searchField.snp.bottom)
+            make.top.equalTo(searchField.snp.bottom).offset(10)
             make.left.bottom.right.equalToSuperview()
         }
+        
+        
         
     }
 
@@ -46,12 +52,12 @@ class SearchViewController: UIViewController {
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return albums.count
+        return self.albums.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.albumTableViewIdentifier, for: indexPath) as! AlbumTableViewCell
-        cell.album = albums[indexPath.row]
+        cell.album = self.albums[indexPath.row]
         return cell
     }
     
@@ -66,12 +72,31 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedAlbum = albums[indexPath.row]
+        let detailVC = AlbumDetailViewController()
+        detailVC.album = selectedAlbum
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        
+    }
+    
+}
+
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+    }
 }
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        APIClient.getDiscogsSearchResults(query: searchText) { (jsonResponse) in
+        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        APIClient.getDiscogsSearchResults(query: searchBar.text!) { (jsonResponse) in
             self.albums.removeAll()
             for albumJSON in jsonResponse["results"].array! {
                 let albumDict = albumJSON.dictionaryObject

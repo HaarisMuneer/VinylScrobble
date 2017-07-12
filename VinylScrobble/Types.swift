@@ -17,11 +17,13 @@ struct Album {
     var year: String?
     var label: String
     var thumbnailURL: URL?
+    var resourceURL: URL
     
     init?(json: [String : Any]) {
         guard let titleAndArtist = json["title"] as? String else { print("there was an error initializing an album from the json object"); fatalError() }
         guard let labelArray = json["label"] as? [String] else { print("there was an error initializing an album from the json object"); fatalError() }
         guard let thumbnailURL = json["thumb"] as? String else { print("there was an error initializing an album from the json object"); fatalError() }
+        guard let resourceURL = json["resource_url"] as? String else { print("there was an error initializing an album from the json object"); fatalError() }
         
         let titleAndArtistArray = titleAndArtist.components(separatedBy: " - ")
         let title = titleAndArtistArray.last
@@ -32,6 +34,7 @@ struct Album {
         self.year = json["year"] as? String
         self.label = labelArray.first!
         self.thumbnailURL = URL(string: thumbnailURL)
+        self.resourceURL = URL(string: resourceURL)!
         
     }
     
@@ -40,7 +43,8 @@ struct Album {
         self.artist = "Oddisee"
         self.year = "2011"
         self.label = "Mello Music Group"
-        self.thumbnailURL = URL(string: "https://i1.sndcdn.com/artworks-000023004645-sczg6t-t500x500.jpg")
+        self.thumbnailURL = URL(string: "https://i1.sndcdn.com/artworks-000023004645-sczg6t-t500x500.jpg")!
+        self.resourceURL = URL(string: "https://www.google.com")!
     }
 }
 

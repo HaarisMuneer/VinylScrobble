@@ -66,6 +66,13 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
         return CGSize(width: halfScreenWidth, height: halfScreenWidth + 60)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedAlbum = user.collection[indexPath.row]
+        let detailVC = AlbumDetailViewController()
+        detailVC.album = selectedAlbum
+        self.show(detailVC, sender: self)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }

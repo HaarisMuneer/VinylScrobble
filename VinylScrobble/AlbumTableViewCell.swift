@@ -64,7 +64,9 @@ class AlbumTableViewCell: UITableViewCell {
     fileprivate func fillOutCellFields() {
         self.artistLabel.text = self.album.artist
         self.titleLabel.text = self.album.title
-        self.labelAndYearLabel.text = "\(self.album.label) (\(self.album.year))"
+        var labelAndYear = self.album.label
+        if let year = self.album.year { labelAndYear = labelAndYear + " (\(year))" }
+        self.labelAndYearLabel.text = labelAndYear
         self.albumArtImageView.sd_setImage(with: self.album.thumbnailURL)
     }
     

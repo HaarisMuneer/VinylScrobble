@@ -48,6 +48,7 @@ class AlbumCollectionViewCell: UICollectionViewCell {
         labelsStackView.distribution = .fillProportionally
         
         albumArtImageView = UIImageView()
+        self.clipsToBounds = true
         self.addSubview(albumArtImageView)
         self.addSubview(labelsStackView)
         
